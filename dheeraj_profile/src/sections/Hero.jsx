@@ -4,15 +4,22 @@ import {
   ChevronDown,
   Github,
   Linkedin,
-  Twitter,
   Download,
 } from "lucide-react";
 import { AnimatedBorderButton } from "../components/AnimatedBorderButton";
 
 const skills = [
+  "Android",
+  "Kotlin",
+  "React Native",
   "React",
+  "Python",
+  "JavaScript",
+  "Redux",
   "Next.js",
   "TypeScript",
+  "LangChain",
+  "RAG",
   "Node.js",
   "MongoDB",
   "Vercel",
@@ -20,7 +27,6 @@ const skills = [
   "Jest",
   "Figma",
   "Git",
-  "GitHub Actions",
 ];
 
 export const Hero = () => {
@@ -63,7 +69,7 @@ export const Hero = () => {
             <div className="animate-fade-in">
               <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full glass text-sm text-primary">
                 <span className="w-2 h-2 bg-primary rounded-full animate-pulse" />
-                Software Engineer • React Specialist
+                Senior Software Engineer • Mobile & Web Specialist
               </span>
             </div>
 
@@ -79,8 +85,10 @@ export const Hero = () => {
                 </span>
               </h1>
               <p className="text-lg text-muted-foreground max-w-lg animate-fade-in animation-delay-200">
-                Hi, I'm Dheeraj Rathore — a software engineer specializing in
-                React, Next.js, and TypeScript. I build scalable, performant web
+                Hi, I'm Dheeraj Rathore — a senior software engineer
+                specializing in Android, React Native, ReactJS, JavaScript, and
+                TypeScript. Also working as a GenAI developer using Python and
+                AI frameworks. I build scalable, performant mobile and web
                 applications that users love.
               </p>
             </div>
@@ -97,7 +105,10 @@ export const Hero = () => {
               >
                 Contact Me <ArrowRight className="w-5 h-5" />
               </Button>
-              <AnimatedBorderButton>
+              <AnimatedBorderButton
+                href="/resume.pdf"
+                download="Dheeraj_Rathore_Resume.pdf"
+              >
                 <Download className="w-5 h-5" />
                 Download CV
               </AnimatedBorderButton>
@@ -107,8 +118,14 @@ export const Hero = () => {
             <div className="flex items-center gap-4 animate-fade-in animation-delay-400">
               <span className="text-sm text-muted-foreground">Follow me: </span>
               {[
-                { icon: Github, href: "https://github.com/dheerajsinghrathore" },
-                { icon: Linkedin, href: "https://www.linkedin.com/in/dheeraj-r-8634b6164/" },
+                {
+                  icon: Github,
+                  href: "https://github.com/dheerajsinghrathore",
+                },
+                {
+                  icon: Linkedin,
+                  href: "https://www.linkedin.com/in/dheeraj-r-8634b6164/",
+                },
               ].map((social, idx) => (
                 <a
                   key={idx}
