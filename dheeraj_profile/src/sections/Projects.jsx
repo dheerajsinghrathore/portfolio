@@ -20,7 +20,7 @@ const projects = [
     github: "#",
   },
   {
-    title: "AI Writing Assistant",
+    title: "Dream Decor Android app",
     description:
       "An intelligent writing tool powered by GPT-4, helping users create better content faster.",
     image: "/projects/project3.png",
